@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/prawnpdf/prawn-table.git
+  revision: 38b5bdb5dd95237646675c968091706f57a7a641
+  branch: HEAD
+  specs:
+    prawn-table (0.2.3)
+      prawn (>= 1.3.0, < 3.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -5,12 +13,12 @@ GEM
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     afm (0.2.2)
-    asciidoctor (2.0.16)
+    asciidoctor (2.0.17)
     asciidoctor-epub3 (1.5.1)
       asciidoctor (>= 1.5.6, < 3.0.0)
       gepub (~> 1.0.0)
       mime-types (~> 3.0)
-    asciidoctor-pdf (1.6.1)
+    asciidoctor-pdf (1.6.2)
       asciidoctor (~> 2.0)
       concurrent-ruby (~> 1.1)
       prawn (~> 2.4.0)
@@ -21,19 +29,20 @@ GEM
       safe_yaml (~> 1.0.0)
       treetop (~> 1.6.0)
     concurrent-ruby (1.1.9)
-    css_parser (1.10.0)
+    css_parser (1.11.0)
       addressable
     gepub (1.0.15)
       nokogiri (>= 1.8.2, < 2.0)
       rubyzip (> 1.1.1, < 2.4)
     hashery (2.1.2)
+    matrix (0.4.2)
     mime-types (3.4.1)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2021.1115)
-    nokogiri (1.12.5-x86_64-darwin)
+    mime-types-data (3.2022.0105)
+    nokogiri (1.13.3-arm64-darwin)
       racc (~> 1.4)
     pdf-core (0.9.0)
-    pdf-reader (2.6.0)
+    pdf-reader (2.9.2)
       Ascii85 (~> 1.0)
       afm (~> 0.2.1)
       hashery (~> 2.0)
@@ -49,15 +58,13 @@ GEM
       css_parser (~> 1.6)
       prawn (>= 0.11.1, < 3)
       rexml (~> 3.2)
-    prawn-table (0.2.2)
-      prawn (>= 1.3.0, < 3.0.0)
     prawn-templates (0.1.2)
       pdf-reader (~> 2.0)
       prawn (~> 2.2)
     public_suffix (4.0.6)
     racc (1.6.0)
     rexml (3.2.5)
-    rouge (3.26.1)
+    rouge (3.28.0)
     ruby-rc4 (0.1.5)
     rubyzip (2.3.2)
     safe_yaml (1.0.5)
@@ -66,13 +73,15 @@ GEM
     ttfunk (1.7.0)
 
 PLATFORMS
-  x86_64-darwin-21
+  arm64-darwin-21
 
 DEPENDENCIES
   asciidoctor
   asciidoctor-epub3
   asciidoctor-pdf
+  matrix
+  prawn-table!
   rouge
 
 BUNDLED WITH
-   2.2.32
+   2.3.8

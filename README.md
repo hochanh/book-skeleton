@@ -9,6 +9,13 @@ The project uses [`asciidoctor-epub`](https://docs.asciidoctor.org/epub3-convert
 
 ## Getting started
 
+For Apple Sillicon
+
+  brew install ruby
+  export PATH=/usr/local/opt/ruby/bin:$PATH
+  export PATH=`gem environment gemdir`/bin:$PATH
+
+
 The project dependencies are Ruby libraries, and can be installed using Bundler:
 
     bundle install
